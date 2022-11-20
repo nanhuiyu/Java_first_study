@@ -1,0 +1,38 @@
+//public class 数据类型练习 {
+//    public static void main(String[] args) {
+//        /*输出老师信息：
+//        姓名：谢广坤
+//        年龄：18
+//        身高：180.5cm
+//        是否单身：是
+//        */
+//        String name="谢广坤";
+//        int age=18;
+//        double tall=180.1;
+//        char single='是';
+//        System.out.println("姓名："+name);
+//        System.out.println("年龄："+age);
+//        System.out.println("身高："+tall);
+//        System.out.println("是否单身："+single);
+//        if(single=='是'){
+//            System.out.println("单身？你个傻狗！！！");
+//        }
+//    }
+//}
+
+public class 数据类型练习{
+    public static void main(String[] args) {
+        //打印电影信息
+        //1,名称：送初恋回家
+        String name="送初恋回家";
+        //2，主演：刘鑫，张雨提，高媛
+        String tostar="刘鑫，张雨提，高媛";
+        //3，年份：2020
+        int age=2020;
+        //4，评分：9.0
+        double score=9.0;
+        System.out.println("名称:"+name);
+        System.out.println("主演:"+tostar);
+        System.out.println("年份:"+age);
+    }
+}
