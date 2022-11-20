@@ -1,0 +1,30 @@
+public class 数据类型 {
+    public static void main(String[] args){
+        //输出对应变量的值
+        //1,整形
+        System.out.println(666);
+        //注明：long类型的数据需要在数据后加“L”以申明
+        long aa=9999999999L;
+        System.out.println("aa 的值是："+aa);
+
+        //2，浮点型
+        System.out.println(-666.6);
+
+        //注明：float类型的数据需要在数据后加“F”以申明
+        float ab=999999.7F;
+        System.out.println("ab 的值是："+ab);
+
+        //3，字符串
+        System.out.println("这是字符串！！！");
+        //4，布尔型
+        System.out.println(true);//直接打印true
+        System.out.println(false);//直接打印false
+        /*5，空
+        System.out.println(null);
+        不允许直接打印，若需打印，需转换成字符串形式打印
+        */
+        System.out.println("null");
+
+
+    }
+}
