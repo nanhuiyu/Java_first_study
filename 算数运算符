@@ -1,0 +1,60 @@
+import java.sql.SQLOutput;
+import java.util.Scanner;
+public class 算术运算符 {
+    public static void main(String[] args) {
+//        加、减、乘、除、求模运算
+//        int a=2;
+//        int b=4;
+//        System.out.println(a+b);
+//        System.out.println(a-b);
+//        System.out.println(a*b);
+//        System.out.println(a/b);
+//        System.out.println((b+1)/a);//int  / int   =  int
+//        System.out.println((b+1)%a);
+
+        System.out.println("------------------------------------------------");
+        //录入一个数并获取每位数
+        /*
+        * 公式：
+        * 个位：num/1%10
+        * 十位：num/10%10
+        * 百位:num/100%10
+        * .........
+        * */
+        Scanner scan=new Scanner(System.in);
+        System.out.println("请输入一个不多于五位的数");
+        int getNum=scan.nextInt();
+        if(0<=getNum && getNum<10){
+            System.out.println("一位"+getNum);
+        }
+        else if(getNum<100){
+            int s=getNum/10%10;
+            int g=getNum%10;
+            System.out.println("两位"+s+"\t"+g);
+        }
+        else if(getNum<1000){
+            int b=getNum/100%10;
+            int s=getNum/10%10;
+            int g=getNum%10;
+            System.out.println("三位"+b+"\t"+s+"\t"+g);
+        }
+        else if(getNum<10000){
+            int q=getNum/1000%10;
+            int b=getNum/100%10;
+            int s=getNum/10%10;
+            int g=getNum%10;
+            System.out.println("四位："+q+"\t"+b+"\t"+s+"\t"+g);
+        }
+        else if(getNum<100000){
+            int w=getNum/10000%10;
+            int q=getNum/1000%10;
+            int b=getNum/100%10;
+            int s=getNum/10%10;
+            int g=getNum%10;
+            System.out.println("五位："+w+"\t"+q+"\t"+b+"\t"+s+"\t"+g);
+        }
+        else{
+            System.out.println("数字不符！！！！");
+        }
+    }
+}
