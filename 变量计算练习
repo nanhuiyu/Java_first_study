@@ -1,0 +1,18 @@
+public class 变量计算练习 {
+    public static void main(String[] args){
+        //计算公交车终点站人数，初始count=0
+        int count=0;
+        //1，第一站上去四人人
+        count +=3;
+        //2，第二站下来两人
+        count-=2;
+        //3，第三站没有人下也没有人上
+        count+=0;
+        //4，第四站上去两人
+        count+=2;
+        //5，第五站下去三人
+        count-=3;
+        //6，终点站
+        System.out.println("到站后公交车上剩余的人数为："+count);
+    }
+}
