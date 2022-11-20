@@ -1,0 +1,16 @@
+public class 转义字符 {
+    public static void main(String[] args){
+        //1，制表符：\t，打印时将  前面的字符串长度  补齐到8或者是8的整数倍，最少补一个空格，最多补八个
+        System.out.println("使用制表符之前：");
+        System.out.println("name"+"age");
+        System.out.println("zhangsan"+"30");
+        System.out.println("使用制表符之后：");
+        System.out.println("name"+'\t'+"age");
+        System.out.println("zhangsan"+'\t'+"30");
+        System.out.println("zhangsan\t30");
+        //2，\n，转行符
+        System.out.println("插入转行符之前：shayebushi");
+        System.out.println("插入转行符之后：shayeb"+'\n'+"ushi");
+        System.out.println("插入转行符之后：shayeb\nushi");
+    }
+}
