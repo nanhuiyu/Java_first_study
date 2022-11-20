@@ -1,0 +1,26 @@
+import java.net.SocketTimeoutException;
+
+public class 变量 {
+    public static void main(String[] args){
+        //变量：在程序执行过程中，其值可能改变的量，注意，使用前变量必须赋值
+        //定义方式：1，数据类型 变量名=数据值；
+        //        2，一行可以同时定义多个变量
+        //数据类型：限定变量可以存储的数据类型
+
+
+        //1，打印输出
+        int a=0;
+        double b=1.0;
+        System.out.println(a);
+        System.out.println(b);
+
+        //2，参与运算
+        System.out.println(a+b);//不同数据类型加减时，低级数据类型会向高级数据类型转换
+        System.out.println(1.1+2.2);//bug，等于3.3000000000000000000000000003
+
+        //2。改变变量的值
+        System.out.println("before:"+a);
+        a=1000000;
+        System.out.println("after:"+a);
+    }
+}
