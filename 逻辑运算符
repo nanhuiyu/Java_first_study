@@ -1,0 +1,41 @@
+import java.sql.SQLOutput;
+
+public class 逻辑运算符{
+    //逻辑运算符与短路运算符：
+    //逻辑运算符：&、|、！、^
+    /*
+    短路运算符：&&,||，与逻辑运算符结果一致，但是有短路效果,需要注意的是，短路之后若前一级可以判断整个表达式的真假，则后一级将    不参与运算！
+    */
+    //区别：在逻辑运算符中，若判断A与B的真假，则需要判断A和B的共同真假，即A和B都需要参与运算，例如表示为：A & B，A | B
+    //在短路逻辑运算符中中，A&&B表示意义与A&B一致，但若判断出A为假，则不需要判断B的状态，在A || B中，若判断出A为真，则不需要判断B的状态
+    public static void main(String[] args){
+        //1,与，&
+        System.out.println("--------------------&---------------------------");
+        System.out.println(true & false);
+        System.out.println(true && false);
+        System.out.println(true && true);
+        //2,或，|
+        System.out.println("--------------------|---------------------------");
+        System.out.println(true | false);
+        System.out.println(true || false);
+        System.out.println(true | true);
+        System.out.println(false | false);
+        //3，非,!
+        System.out.println("--------------------!---------------------------");
+        System.out.println(!true);
+        //4，异或，相同为假，不同为真
+        System.out.println("--------------------^---------------------------");
+        System.out.println(false ^ false);
+        System.out.println(true ^ true);
+        System.out.println(true ^ false);
+
+        /*重要注释*/
+        System.out.println("___________________________________________________");
+        int a=10;
+        int b=10;
+        boolean result=++a<5 && ++b<10;
+        System.out.println(result);
+        System.out.println(a);//11
+        System.out.println(b);//10
+    }
+}
