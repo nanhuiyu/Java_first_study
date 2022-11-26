@@ -1,0 +1,8 @@
+public class 三元运算符 {
+    public static void main(String[] args) {
+     //三元运算符，格式：表达式a?表达式b:表达式c；
+     //表达式a成立则执行表达式b，否则执行表达式c
+        System.out.println(3>4?5:6);
+        System.out.println(true==false?true:false);
+    }
+}
