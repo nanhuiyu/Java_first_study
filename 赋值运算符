@@ -1,0 +1,12 @@
+public class 赋值运算符 {
+    public static void main(String args[]){
+        int a=1,b=3;
+        System.out.println(a+=b);
+        System.out.println(a-=b);
+        System.out.println(a*=b);
+        System.out.println(a/=b);
+        System.out.println(a%=b);
+        //==：的应用
+        System.out.println(a==b);//结果为   true  或者  false,表示表达式的真假
+    }
+}
